@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <title>motivate</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="http://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css"> 
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="index.css">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  
+  <script src = "jquery.js"></script>
+  
+  <script>function getRandomInt(min, max)
+  {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+   } 
+   var random = getRandomInt(1,7);
+   var path = 'images/' + random + '.jpg';
+   (new Image()).src = path;
+   console.log(path);  
+   </script>
+   
+  <script src = "index.js"></script>
+
+</head>
+<body id = "body">
+  <div class= "wrap"></div>
+  <script>
+    $('.wrap').css('background-image',"url('"+path+"')");
+  </script>
+
+
+  <div class="container hoo">
+    <div class="row">
+      <div class="one-third column" style="margin-top: 20%">
+        <h4>motivate-me</h4>
+      
+          <form action = "#">
+          <input type = "text" id = "name" placeholder ="Your name please" autocomplete = "off">
+          <input type="text" id = "msg" placeholder = "What motivates you?" autocomplete = "off">
+          <button class="button-primary" type = "submit">motivate-me</button>
+          </form>
+      </div>
+    </div>
+  </div>
+
+  <div class = "container guy">
+    <div class = "row">
+       <div class="twelve columns" id = "foo" style="margin-top: 20%">
+
+        </div>
+    </div>
+ </div>
+</body>
+</html>
