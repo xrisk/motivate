@@ -39,8 +39,8 @@ $(document).ready(function()
 	{
 		if (check())
 		{
-		var name = $('#name').val().toLowerCase();
-		var msg = $('#msg').val().toLowerCase();
+		var name = $('#name').val();
+		var msg = $('#msg').val();
 		$('.container.form').addClass('fade-up');
 		$('.container.form').remove();
 
