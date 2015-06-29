@@ -33,24 +33,21 @@ $(document).ready(function()
 		else return false;
 	};
 	$('input').bind('keypress',sanitise1);
+
+	$('.wrap').css('background-image',"url('"+path+"')");
 	$('button').click(function()
 	{
 		if (check())
 		{
-		$('.hoo').addClass('animate');
-		
-
 		var name = $('#name').val().toLowerCase();
 		var msg = $('#msg').val().toLowerCase();
-		$('.hoo').remove();
+		$('.container.form').addClass('fade-up');
+		$('.container.form').remove();
 
-		$('.wrap').addClass('brighten')
-		
-
-		$('#foo').html('<h1>Focus, '+name+'</h1><br><h1>'+msg+' beckons.</h1>')
-		$('.guy').addClass('animate-in');
+		$('.wrap').addClass('brighten');
+		$('#line1').html('Focus, '+name);
+		$('#line2').html(msg+' beckons.')
+		$('.container.message').addClass('fade-down');
 		}
-		return false;
-
 	});
 });
