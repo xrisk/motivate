@@ -1,59 +1,10 @@
-
-
-.button
-{
-	color: white;
-}
-
-body,html
-{
-	height: 100%;
-	width: 100%;
-}
-
-h1,h4
-{
-	color:  white;
-}
-
-.wrap
-{
-	position: fixed;
-	height: 100%;
-	width: 100%;
-	background-size: cover;
-    background-position: center center;
-    -webkit-filter: brightness(0.3);
-    transition: all 1s ease-in;
-   
-}
-.brighten
-{
-	-webkit-filter: brightness(1);
-}
-.container
-{
-	padding-top: 15%;
-	top:0px;
-	transition: all 0.20s;
-}
-.fade-down
-{
-	top:10px;
-	opacity: 1;
-}
-.fade-up
-{
-	top:-20px;
-	opacity: 0;
-}
-
-.message
-{
-	transition: all 0.2s linear;
-}
-
-.center
-{
-	text-align: center;
-}
+.button{color:white;}
+body,html{height:100%;width:100%;}
+h1,h4{color:white;}
+.wrap{position:fixed;height:100%;width:100%;background-size:cover;background-position:center center;-webkit-filter:brightness(0.3);transition:all 1s ease-in;}
+.brighten{-webkit-filter:brightness(1);}
+.container{padding-top:15%;top:0px;transition:all 0.20s;}
+.fade-down{top:10px;opacity:1;}
+.fade-up{top:-20px;opacity:0;}
+.message{transition:all 0.2s linear;}
+.center{text-align:center;}
